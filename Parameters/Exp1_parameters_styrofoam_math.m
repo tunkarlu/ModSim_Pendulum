@@ -1,0 +1,12 @@
+g = 9.81; %gravitational acceleration
+mB = 0.0047; %mass of styrofoam ball
+lR = 0.566; %length of the rod
+s = 0.01;   %screw-in length
+rB = 0.035; %radius of the ball
+l = lR-s+rB; %ball center to bearing length
+z = 1.569524219073499e-04; %damping coefficient from measurement
+d=0;    %damping coefficient of 0
+omega_0 = 0;    %initial velocity
+phi_0 = deg2rad(38.875);    %initial deflection angle
+Fgl = mB*g*l;   %moment caused by the weight
+J = mB*l*l; %inertial mass of the ball
